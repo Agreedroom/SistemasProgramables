@@ -34,7 +34,16 @@ void loop() {
   digitalWrite(amarillo,0);
   digitalWrite(verde,0);
  }
- if(celcius)
+ if(celcius>=19.088 && <26.0){
+  digitalWrite(rojo,0);
+  digitalWrite(amarillo,1);
+  digitalWrite(verde,0);
+ }
+ if(celcius <19.0){
+  digitalWrite(rojo,0);
+  digitalWrite(amarillo,0);
+  digitalWrite(verde,0);
+ }
 
  delay(1000);
  
