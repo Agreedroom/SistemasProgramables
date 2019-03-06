@@ -1,0 +1,6 @@
+{
+    "board": "arduino:avr:uno",
+    "sketch": "practrica2.ino",
+    "port": "COM4",
+    "programmer": "Parallel Programmer"
+}
