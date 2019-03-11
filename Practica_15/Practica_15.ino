@@ -3,10 +3,16 @@ double voltaje=0.0;
 int medida=0;
 float celcius=0.0;
 float farenheit =0.0;
+int verde =7;
+int rojo =5;
+int amarillo=6;
 void setup() {
   // put your setup code here, to run once:
  Serial.begin(9600);
  pinMode(3,OUTPUT);
+ pinMode(rojo,OUTPUT);
+ pinMode(verde,OUTPUT);
+ pinMode(amarillo,OUTPUT);
 
 }
 
@@ -34,7 +40,7 @@ void loop() {
   digitalWrite(amarillo,0);
   digitalWrite(verde,0);
  }
- if(celcius>=19.088 && <26.0){
+ if(celcius>=19.088 && celcius<26.0){
   digitalWrite(rojo,0);
   digitalWrite(amarillo,1);
   digitalWrite(verde,0);
